@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono", serif;
+}
+
+
+body {
+    min-width: 100%;
+    height: auto;
+    /* background-image: url("/BackgroundImage/backg.jpg"); */
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+h1 {
+    font-size: 5.375rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 3.43rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1.25rem;
+}
+
+h3 {
+    font-size: 3.25rem;
+    line-height: 3.43rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.937rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 2.18rem;
+}

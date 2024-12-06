@@ -1,0 +1,55 @@
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    h1 {
+        font-size: 2.1875rem;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.68rem;
+    }
+
+    h5 {
+        font-size: 1.0625rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .header_scrolled {
+        height: auto;
+    }
+
+    .header-wrapper .navbar-collapse {
+        margin-top: -0.125rem;
+    }
+
+    .header-wrapper .menu_navbar_nav {
+        text-align: center;
+        background-color: #fff;
+        padding-bottom: 0.9375rem;
+    }
+
+    .header-wrapper .nav-item .nav-link{
+        margin-top: 0.9375rem;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.75rem;
+        list-style: 3rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        list-style: 2.375rem;
+    }
+
+    h3 {
+        font-size: 1.5625rem;
+        list-style: 2.1875rem;
+    }
+}
