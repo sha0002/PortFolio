@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import './App.css'
 import './Responsive.css'
 import Navbar from './Components/NavBar/Navbar'
-import { Outlet } from 'react-router-dom'
 import Banner_Wrapper from './Components/Banner_wrapper/Banner_Wrapper'
+import About from './Components/About/About'
+import Skills from './Components/Skills/Skills'
+import Project from './Components/Project/Project'
+import Contact from './Components/Contact/Contact'
+
 
 
 
@@ -11,9 +15,15 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      {/* <Banner_Wrapper /> */}
-      <Outlet />
+      <div>
+        <Navbar />
+        <Banner_Wrapper />
+        <About />
+        <Skills />
+        <Project />
+        <Contact />
+      </div>
+
     </>
   )
 }

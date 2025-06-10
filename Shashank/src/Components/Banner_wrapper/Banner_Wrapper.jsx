@@ -4,7 +4,7 @@ import React from 'react'
 function Banner_Wrapper() {
     return (
         <>
-            <section id='Home' className='banner_wrapper '>
+            <section name="Home" id='Home' className='banner_wrapper Home'>
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-lg-7 order-lg-1 order-2 banner_content">

@@ -1,82 +1,6 @@
-// import React, { useState } from 'react'
-// import { Link, NavLink } from 'react-router-dom'
-
-
-// function Navbar() {
-
-//     const [active, setActive] = useState(false)
-
-//     window.addEventListener("scroll", function () {
-//         if (this.window.scrollY > 20) {
-//             setActive(true)
-//         } else {
-//             setActive(false)
-//         }
-//     })
-
-//     const navBar = document.querySelectorAll(".nav-link")
-//     const navCollapse = document.querySelector(".navbar-collapse.collapse")
-//     navBar.forEach(function (a) {
-//         a.addEventListener("click", function () {
-//             navCollapse.classList.remove("show")
-//         })
-//     })
-
-//     return (
-//         <>
-//             <nav className={`navbar navbar-expand-lg header-wrapper fixed-top ${active ? "header-scroll" : ""} `}>
-//                 <div className="container ">
-//                     <Link className="navbar-brand" to="/">
-//                         <img src="/images/favicon.png" className='img-fluid float-end' alt="portfolio.png" />
-
-//                     </Link>
-//                     <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
-//                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-//                         aria-label="Toggle navigation">
-//                         <i className="fas fa-stream"></i>
-//                     </button>
-//                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//                         <ul className="navbar-nav mb-2 ms-auto mb-lg-0 menu_navbar_nav ">
-//                             <li className="nav-item ">
-//                                 <NavLink className={`nav-link  px-md-4 `} to="/">Home</NavLink>
-//                             </li>
-//                             <li className="nav-item">
-//                                 <NavLink className="nav-link  px-md-4 " to="/about">About</NavLink>
-//                             </li>
-//                             <li className="nav-item">
-//                                 <NavLink className="nav-link  px-md-4" to="/skills">Skills</NavLink>
-//                             </li>
-//                             <li className="nav-item">
-//                                 <NavLink className="nav-link px-md-4" to="/project">Project</NavLink>
-//                             </li>
-//                             <li className="nav-item">
-//                                 <NavLink className="nav-link px-md-4" to="/contact">Contact</NavLink>
-//                             </li>
-
-//                         </ul>
-
-//                     </div>
-//                 </div>
-//             </nav>
-//         </>
-
-//     )
-// }
-
-// export default Navbar
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -98,6 +22,7 @@ function Navbar() {
   }, []);
 
   const handleNavLinkClick = () => {
+    setIsCollapsed(true);
   };
 
   const toggleNavbar = () => {
@@ -107,12 +32,11 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg header-wrapper fixed-top ${
-          active ? 'header-scroll' : ''
-        }`}
+        className={`navbar navbar-expand-lg header-wrapper fixed-top ${active ? 'header-scroll' : ''
+          }`}
       >
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="Home" smooth={true} duration={500} offset={0}>
             <img
               src="/images/favicon.png"
               className="img-fluid float-end"
@@ -127,56 +51,55 @@ function Navbar() {
             <i className="fas fa-stream"></i>
           </button>
           <div
-            className={`collapse navbar-collapse ${
-              isCollapsed ? '' : 'show'
-            }`}
+            className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'
+              }`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav mb-2 ms-auto mb-lg-0 menu_navbar_nav">
               <li className="nav-item">
-                <NavLink
+                <Link
                   className="nav-link px-md-4"
-                  to="/"
+                  to="Home" smooth={true} duration={500} offset={0}
                   onClick={handleNavLinkClick}
                 >
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
                   className="nav-link px-md-4"
-                  to="/about"
+                  to="About" smooth={true} duration={500} offset={0}
                   onClick={handleNavLinkClick}
                 >
                   About
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
                   className="nav-link px-md-4"
-                  to="/skills"
+                  to="Skills" smooth={true} duration={500} offset={-70}
                   onClick={handleNavLinkClick}
                 >
                   Skills
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
                   className="nav-link px-md-4"
-                  to="/project"
+                  to="Project" smooth={true} duration={500} offset={-70}
                   onClick={handleNavLinkClick}
                 >
                   Project
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
                   className="nav-link px-md-4"
-                  to="/contact"
+                  to="Contact" smooth={true} duration={500} offset={0}
                   onClick={handleNavLinkClick}
                 >
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>
