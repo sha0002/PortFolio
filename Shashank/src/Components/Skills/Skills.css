@@ -1,0 +1,235 @@
+/* Skills container*/
+
+.sub-title {
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.sub-title span {
+    color: #00dfc0;
+}
+
+.heading {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    border-radius: 20px;
+    /* margin-bottom: 50px; */
+}
+
+.technical_bar .bar:first-child {
+    margin-top: 0;
+}
+
+
+.technical_bar .bar:last-child {
+    margin-bottom: 0;
+}
+
+.technical_bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.technical_bar .bar i{
+    font-size: 1.5rem;
+}
+
+.technical_bar .bar .info span {
+    /* color: #00dfc0; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: showtext 0.5s linear forwards;
+    text-transform: uppercase;
+    /* opacity: 0; */
+}
+
+.technical_bar .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 6px;
+    background-color: #e6dbdb;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technical_bar .bar .progress-line span {
+    height: 100%;
+    /* background-color: #018673; */
+    /* background-color: #00dfc0; */
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+    background-color: #c95d2e;
+}
+
+.progress-line.css span {
+    width: 85%;
+    background-color: #147bbc;
+}
+
+.progress-line.js span {
+    width: 70%;
+    background-color: #b0bc1e;
+}
+
+.progress-line.bootstap span {
+    width: 60%;
+    background-color: #c32ec9;
+}
+
+.progress-line.react span {
+    width: 45%;
+    background-color: #69BCBC;
+}
+
+.progress-line.redux span {
+    width: 35%;
+    background-color: #155bdf;
+}
+
+.progress-line span::after {
+    position: absolute;
+    color: aliceblue;
+    padding: 1px 8px;
+    /* background-color: #000; */
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -16px;
+    animation: showtext 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+    background-color: #c95d2e;
+
+
+}
+
+.progress-line.css span::after {
+    content: "85%";
+    background-color: #147bbc;
+
+}
+
+.progress-line.js span::after {
+    content: "70%";
+    background-color: #b0bc1e;
+
+}
+
+.progress-line.bootstap span::after {
+    content: "60%";
+    background-color: #c32ec9;
+
+}
+
+.progress-line.react span::after {
+    content: "45%";
+    background-color: #69BCBC;
+
+}
+
+.progress-line.redux span::after {
+    content: "35%";
+    background-color: #155bdf;
+
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    /* border-top-color: #000; */
+    top: -10px;
+    right: 0;
+    animation: showtext 0.5s 1.5s linear forwards;
+    opacity: 0;
+
+}
+
+.progress-line.html span::before{
+    border-top-color: #c95d2e;
+
+}
+.progress-line.css span::before{
+    border-top-color: #147bbc;
+
+}
+.progress-line.js span::before{
+    border-top-color: #b0bc1e;
+
+}
+.progress-line.bootstap span::before{
+    border-top-color: #c32ec9;
+
+}
+.progress-line.react span::before{
+    border-top-color: #69BCBC;
+
+}
+.progress-line.redux span::before{
+    border-top-color: #155bdf;
+
+}
+
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.feature-box{
+    max-width: 90%;
+    display: flex;
+    border: 2px solid #000;
+    background-color: #c95d2e;
+    padding: 12px;
+    margin-top: 22px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feature-box:hover{
+    box-shadow: 3px 3px 0 0 #000;
+}
+
+.feature-box-small i{
+    font-size: 1.9rem;
+}
+
+.feature-box-small h6{
+    margin: 0;
+    padding-left: 9px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
