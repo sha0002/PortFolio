@@ -7,6 +7,7 @@ import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
 import Project from './Components/Project/Project'
 import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 // import ProgressBars from './Components/ProgressBar/Progressbar'
 
 
@@ -23,6 +24,7 @@ function App() {
         <Skills />
         <Project />
         <Contact />
+        <Footer />
         {/* <ProgressBars/> */}
       </div>
 

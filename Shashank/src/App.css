@@ -44,5 +44,11 @@
 
 
 
-
+.about_wrapper {
+    padding-top: 6.875rem;
+    z-index: 1;
+    background-image: url("/BackgroundImage/home-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 

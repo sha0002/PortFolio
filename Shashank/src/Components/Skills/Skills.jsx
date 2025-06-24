@@ -4,7 +4,7 @@ import "./Skills.css"
 const Skills = () => {
     return (
         <>
-            <div className='bg-light'>
+            <div className='skills-section'>
 
 
 
@@ -110,7 +110,7 @@ const Skills = () => {
                                     </div>
                                     <h6>JAVASCRIPT</h6>
                                 </div>
-                                <div className="feature-box  feature-box-small " style={{ background: "#6379b3" }}>
+                                <div className="feature-box  feature-box-small " style={{ background: "#c32ec9" }}>
                                     <div className="icon ">
                                         <i className="fab fa-bootstrap" ></i>
                                     </div>

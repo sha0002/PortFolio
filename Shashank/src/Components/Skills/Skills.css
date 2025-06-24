@@ -1,5 +1,19 @@
 /* Skills container*/
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.skills-section{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    /* background: #00DFC0;
+background: radial-gradient(circle, rgba(0, 223, 192, 0.51) 0%, rgba(186, 222, 220, 1) 55%); */
+   /* background-image: linear-gradient(to top, #8ae7da, #a5ecf7, #ccf0ff, #edf5ff, #ffffff); */
+   background-image: linear-gradient(to top, #bae8e2, #caedf3, #e0f2fc, #f3f7ff, #ffffff);
+}
+
 .sub-title {
     text-transform: uppercase;
     align-items: center;
@@ -33,7 +47,7 @@
     margin-bottom: 5px;
 }
 
-.technical_bar .bar i{
+.technical_bar .bar i {
     font-size: 1.5rem;
 }
 
@@ -77,32 +91,32 @@
 
 .progress-line.html span {
     width: 90%;
-    background-color: #c95d2e;
+    background-color: #c95c2eb0;
 }
 
 .progress-line.css span {
     width: 85%;
-    background-color: #147bbc;
+    background-color: #147cbca8;
 }
 
 .progress-line.js span {
     width: 70%;
-    background-color: #b0bc1e;
+    background-color: #afbc1ea1;
 }
 
 .progress-line.bootstap span {
     width: 60%;
-    background-color: #c32ec9;
+    background-color: #c42ec98c;
 }
 
 .progress-line.react span {
     width: 45%;
-    background-color: #69BCBC;
+    background-color: #69bcbc96;
 }
 
 .progress-line.redux span {
     width: 35%;
-    background-color: #155bdf;
+    background-color: #155cdf89;
 }
 
 .progress-line span::after {
@@ -171,39 +185,44 @@
 
 }
 
-.progress-line.html span::before{
+.progress-line.html span::before {
     border-top-color: #c95d2e;
 
 }
-.progress-line.css span::before{
+
+.progress-line.css span::before {
     border-top-color: #147bbc;
 
 }
-.progress-line.js span::before{
+
+.progress-line.js span::before {
     border-top-color: #b0bc1e;
 
 }
-.progress-line.bootstap span::before{
+
+.progress-line.bootstap span::before {
     border-top-color: #c32ec9;
 
 }
-.progress-line.react span::before{
+
+.progress-line.react span::before {
     border-top-color: #69BCBC;
 
 }
-.progress-line.redux span::before{
+
+.progress-line.redux span::before {
     border-top-color: #155bdf;
 
 }
 
-@keyframes showtext{
-    100%{
+@keyframes showtext {
+    100% {
         opacity: 1;
     }
 }
 
 
-.feature-box{
+.feature-box {
     max-width: 90%;
     display: flex;
     border: 2px solid #000;
@@ -215,21 +234,18 @@
 
 }
 
-.feature-box:hover{
+.feature-box:hover {
     box-shadow: 3px 3px 0 0 #000;
 }
 
-.feature-box-small i{
+.feature-box-small i {
     font-size: 1.9rem;
 }
 
-.feature-box-small h6{
+.feature-box-small h6 {
     margin: 0;
     padding-left: 9px;
     color: #000;
     font-size: 20px;
     font-weight: bold;
 }
-
-
-
