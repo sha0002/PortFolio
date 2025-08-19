@@ -13,7 +13,7 @@ const Skills = () => {
 
     return (
         <>
-            <section className="skills-section" id="skills">
+            <section className="skills-section py-lg-5 py-1 bg-light" id="skills">
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6">

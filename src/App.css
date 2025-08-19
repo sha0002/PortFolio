@@ -13,11 +13,14 @@
 
 .header-scroll {
     position: fixed;
+    color: #fff;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     box-shadow: 0 0.25rem 0.375rem rgba(12, 0, 46, .05);
+    transition: all .43s ease;
 }
 
 .banner_wrapper .banner_content {
@@ -92,10 +95,15 @@
 .about_wrapper {
     padding-top: 6.875rem;
     z-index: 1;
-    background-image: url("/BackgroundImage/back.png");
+    background-image: url("/BackgroundImage/bg2.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     animation: back 0.5s 1.5s linear forwards;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 

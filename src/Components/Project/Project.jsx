@@ -9,7 +9,7 @@ const Project = () => {
             <section className="portfolio_wrapper Project" id='Project'>
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-12 text-start mb-md-5 mb-2">
+                        <div className="col-sm-12 text-start mb-lg-5 mb-2">
                             <h2>QUALITY WORK <br /> RECENTLY DONE PROJECT </h2>
                         </div>
                     </div>

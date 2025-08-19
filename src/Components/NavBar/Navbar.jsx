@@ -10,7 +10,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 200) {
         setActive(true);
       } else {
         setActive(false);
@@ -50,7 +50,7 @@ function Navbar() {
                 delay: 0.4,
               }}
               src="/images/favicon.png"
-              className="img-fluid float-end"
+              className="img-fluid float-end pointer"
               alt="portfolio.png"
             />
           </Link>

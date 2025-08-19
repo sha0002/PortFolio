@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react'
 import { motion, useInView } from 'motion/react'
 import './Contact.css'
@@ -148,7 +149,7 @@ const Contact = () => {
                                     }}
                                 >
                                     <div className="icon bg-success">
-                                        < i className='bxr  bx-phone' style={{ Color: '#000000' }}></i>
+                                        <i class='bxr  bx-envelope'  style={{ Color: '#000000' }}></i>
                                     </div>
                                     <div className="col ps-3">
                                         <h5>Mail</h5>
@@ -168,11 +169,11 @@ const Contact = () => {
                                     }}
                                 >
                                     <div className="icon bg-danger">
-                                        < i className='bxr  bx-phone' style={{ Color: '#000000' }}></i>
+                                        <i class='bxr  bx-location'  style={{ Color: '#000000' }}></i>
                                     </div>
                                     <div className="col ps-3">
-                                        <h5>Phone</h5>
-                                        <p>+91 8527015266</p>
+                                        <h5>Location</h5>
+                                        <a href="#" target='_black' className='text-light fs-6 text-decoration-none'>Link Here</a>
                                     </div>
                                 </motion.li>
                             </ul>
