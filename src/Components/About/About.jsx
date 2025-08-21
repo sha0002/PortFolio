@@ -14,9 +14,10 @@ function About() {
     }, [inView]);
 
     return (
-        <section id="About" className="about_wrapper About">
-            <div className="container background">
-                <div className="row align-items-center">
+        <section id="About" className="about_wrapper About position-relative">
+            <div className="overlay-main"></div>
+            <div className="container  background">
+                <div className="row align-items-center head-over">
                     <motion.div
                         animate={isInview ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
                         transition={{
@@ -26,12 +27,12 @@ function About() {
                             delay: 0.2,
                         }}
                         ref={ref}
-                        className="col-lg-7 mb-4 mb-lg-0 d-flex justify-content-md-center"
+                        className="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center"
                     >
-                        <img src="/images/about2.png" alt="about" className="img-fluid" />
+                        <img src="/BackgroundImage/about-image.png" alt="about" className="w-75 img-fluid" />
                     </motion.div>
 
-                    <div className="col-lg-5 mb-4 mb-lg-0 text-light">
+                    <div className="col-lg-6 mb-4 mb-lg-0 text-light">
                         <motion.h3
                             className="text-light"
                             animate={isInview ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
@@ -71,13 +72,20 @@ function About() {
                             I'm very much interested in coding and Front-end Development, and I love to learn new programming skills and technology. My dream is to become a successful Web Developer.
                         </motion.p>
 
-                        <motion.button
+                        <motion.div
+                            animate={isInview ? { opacity: 1 } : { opacity: 0 }}
+                            transition={{ delay: 1.5, duration: 2.5 }}
+                            className="about-btn">
+                            <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className=''>Download Resume</button></a>
+                        </motion.div>
+
+                        {/* <motion.button
                             animate={isInview ? { opacity: 1 } : { opacity: 0 }}
                             transition={{ delay: 1.5, duration: 2.5 }}
                             className="btn btn-success mt-4"
                         >
                             Download Resume
-                        </motion.button>
+                        </motion.button> */}
                     </div>
                 </div>
             </div>

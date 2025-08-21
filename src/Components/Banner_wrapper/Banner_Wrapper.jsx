@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Ensure it's the correct import for framer-motion
+import { Link } from 'react-scroll';
+
 
 function Banner_Wrapper({ ref, isInview }) {
     return (
@@ -62,15 +64,16 @@ function Banner_Wrapper({ ref, isInview }) {
                                     damping: 10,
                                     delay: 0.2,
                                 }}
-                                className="col-md-6 display-6 justify-content-end justify-content-center-md-start"
+                                className=""
                                 style={{ willChange: "transform, opacity" }}
                             >
-                                <div className="justify-content-center justify-content-center-md-start">
-                                    <i className="ps-2 bxl bx-facebook text-success"></i>
-                                    <i className="px-2 bxl bx-instagram text-success"></i>
-                                    <i className="px-2 bxl bx-twitter text-success"></i>
-                                    <i className="px-2 bxl bx-linkedin text-success"></i>
-                                    <i className="px-2 bxl bx-whatsapp text-success"></i>
+                                <div className="d-flex">
+                                    <div className="res-btn">
+                                        <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className='me-3'>Download Resume</button></a>
+                                    </div>
+                                    <div className="cont-btn">
+                                        <Link to="Contact" className=''><button type="button" >Contact Us</button></Link>
+                                    </div>
                                 </div>
                             </motion.div>
                         </div>

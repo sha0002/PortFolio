@@ -53,3 +53,13 @@ h5 {
     color: #000;
     margin-bottom: 2.18rem;
 }
+
+@media (max-width:752px) {
+    h3 {
+    font-size: 3.25rem;
+    line-height: 2.43rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.937rem;
+}
+}
