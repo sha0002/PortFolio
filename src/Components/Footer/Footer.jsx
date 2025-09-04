@@ -24,12 +24,11 @@ const Footer = () => {
                     <div className="row align-items-center">
                         <div className="nav col-md-6 py-2 justify-content-center justify-content-center-md-start">
                             <div className="nav  justify-content-center justify-content-center-md-start">
-                                {/* <Link to={'https://getbootstrap.com/docs/5.1/utilities/text/#text-transform'} >Link me</Link> */}
-                                < i className='bxl  bx-facebook' style={{ Color: '#000000' }}></i>
-                                < i className='bxl  bx-instagram' style={{ Color: '#000000' }}></i>
-                                < i className='bxl  bx-twitter' style={{ Color: '#000000' }}></i>
-                                < i className='bxl  bx-linkedin' style={{ Color: '#000000' }}></i>
-                                < i className='bxl  bx-whatsapp' style={{ Color: '#000000' }}></i>
+                                <a href="https://www.facebook.com/share/1FvxoCqUJj/" target='_blank' className='ms-2'> < i className='bxl  bx-facebook' style={{ Color: '#000000' }}></i></a>
+                                <a href="https://www.instagram.com/kshashank7038?utm_source=qr&igsh=MXBtcjJ4bGQ5MnVqbw==" target='_blank' className='ms-2'>< i className='bxl  bx-instagram' style={{ Color: '#000000' }}></i></a>
+                                <a href="https://x.com/iamshashank0002?s=08" target='_blank' className='ms-2'>< i className='bxl  bx-twitter' style={{ Color: '#000000' }}></i></a>
+                                <a href="https://www.linkedin.com/in/shashank-kumar-687376303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='ms-2'>< i className='bxl  bx-linkedin' style={{ Color: '#000000' }}></i></a>
+                                <a href="https://wa.me/+918527015266" target='_blank' className='ms-2'>< i className='bxl  bx-whatsapp' style={{ Color: '#000000' }}></i></a>
 
                             </div>
                         </div>

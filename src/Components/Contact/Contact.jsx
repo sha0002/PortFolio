@@ -119,7 +119,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col ps-3">
                                         <h5>Whatsapp</h5>
-                                        <a href="https://wa.me/+918527015266" target='_black' className='text-light fs-6 text-decoration-none'>Link Here</a>
+                                        <a href="https://wa.me/+918527015266" target='_black' className='text-light fs-6 text-decoration-none'>Click Here</a>
                                     </div>
                                 </ li>
                             </ul>

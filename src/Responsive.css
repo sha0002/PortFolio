@@ -32,7 +32,7 @@
         padding-bottom: 0.9375rem;
     }
 
-    .header-wrapper .nav-item .nav-link{
+    .header-wrapper .nav-item .nav-link {
         margin-top: 0.9375rem;
     }
 }
@@ -53,5 +53,10 @@
         list-style: 2.1875rem;
         line-height: 2.43rem;
     }
-}
 
+    .header-scroll {
+        backdrop-filter: none;
+        background-color: #fff;
+
+    }
+}

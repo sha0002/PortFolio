@@ -11,13 +11,16 @@
     background-size: cover;
 }
 
+
+
 .header-scroll {
     position: fixed;
     color: #fff;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
+    backdrop-filter: blur(10px);
     box-shadow: 0 0.25rem 0.375rem rgba(12, 0, 46, .05);
     transition: all .43s ease;
 }

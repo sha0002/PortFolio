@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 h1 {
@@ -54,12 +54,3 @@ h5 {
     margin-bottom: 2.18rem;
 }
 
-@media (max-width:752px) {
-    h3 {
-    font-size: 3.25rem;
-    line-height: 2.43rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 0.937rem;
-}
-}

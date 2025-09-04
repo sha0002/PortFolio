@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { delay, motion } from 'motion/react'
-
-
 import { Link } from 'react-scroll';
 
 function Navbar() {
@@ -10,7 +8,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 10) {
         setActive(true);
       } else {
         setActive(false);
