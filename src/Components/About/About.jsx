@@ -76,7 +76,7 @@ function About() {
                             animate={isInview ? { opacity: 1 } : { opacity: 0 }}
                             transition={{ delay: 1.5, duration: 2.5 }}
                             className="about-btn">
-                            <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className=''>Download Resume</button></a>
+                            <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className=''>View Resume</button></a>
                         </motion.div>
 
                         {/* <motion.button

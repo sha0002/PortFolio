@@ -69,7 +69,7 @@ function Banner_Wrapper({ ref, isInview }) {
                             >
                                 <div className="d-flex">
                                     <div className="res-btn">
-                                        <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className='me-3'>Download Resume</button></a>
+                                        <a href="/pdf/SHA1.pdf" target='_black'><button type="button" className='me-3'>View Resume</button></a>
                                     </div>
                                     <div className="cont-btn">
                                         <Link to="Contact" className=''><button type="button" >Contact Us</button></Link>
