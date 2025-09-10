@@ -28,7 +28,7 @@ const Footer = () => {
                                 <a href="https://www.instagram.com/kshashank7038?utm_source=qr&igsh=MXBtcjJ4bGQ5MnVqbw==" target='_blank' className='ms-2'>< i className='bxl  bx-instagram' style={{ Color: '#000000' }}></i></a>
                                 <a href="https://x.com/iamshashank0002?s=08" target='_blank' className='ms-2'>< i className='bxl  bx-twitter' style={{ Color: '#000000' }}></i></a>
                                 <a href="https://www.linkedin.com/in/shashank-kumar-687376303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='ms-2'>< i className='bxl  bx-linkedin' style={{ Color: '#000000' }}></i></a>
-                                <a href="https://wa.me/+918527015266" target='_blank' className='ms-2'>< i className='bxl  bx-whatsapp' style={{ Color: '#000000' }}></i></a>
+                                <a href="https://github.com/sha0002" target='_blank' className='ms-2'>< i className='bxl  bx-github' style={{ Color: '#000000' }}></i></a>
 
                             </div>
                         </div>
