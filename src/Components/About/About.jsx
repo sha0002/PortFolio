@@ -29,7 +29,7 @@ function About() {
                         ref={ref}
                         className="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center"
                     >
-                        <img src="/BackgroundImage/about-image.png" alt="about" className="w-75 img-fluid" />
+                        <img src="/BackgroundImage/about-image1.png" alt="about" className="w-75 img-fluid" />
                     </motion.div>
 
                     <div className="col-lg-6 mb-4 mb-lg-0 text-light">

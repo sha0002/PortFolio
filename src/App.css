@@ -4,7 +4,7 @@
 }
 
 .banner_wrapper {
-    padding-top: 6.875rem;
+    padding-top: 7.875rem;
     z-index: 1;
     background-image: url("/BackgroundImage/home-banner.png");
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 .about_wrapper {
     padding-top: 6.875rem;
     z-index: 1;
-    background-image: url("/BackgroundImage/bg2.jpg");
+    background-image: url("/BackgroundImage/bg3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

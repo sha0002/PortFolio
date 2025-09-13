@@ -88,7 +88,7 @@ function Banner_Wrapper({ ref, isInview }) {
                         >
                             <div className="top-right-img">
                                 <img
-                                    src="/images/banner.png"
+                                    src="/images/banner3.png"
                                     className="img-fluid float-end rounded"
                                     alt="portfolio.png"
                                 />

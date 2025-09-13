@@ -47,7 +47,7 @@ function Navbar() {
                 damping: 10,
                 delay: 0.4,
               }}
-              src="/images/favicon.png"
+              src="/images/favicon1.png"
               className="img-fluid float-end pointer"
               alt="portfolio.png"
             />
