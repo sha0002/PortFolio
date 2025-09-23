@@ -8,10 +8,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
-    /* background: #00DFC0;
-background: radial-gradient(circle, rgba(0, 223, 192, 0.51) 0%, rgba(186, 222, 220, 1) 55%); */
-    /* background-image: linear-gradient(to top, #8ae7da, #a5ecf7, #ccf0ff, #edf5ff, #ffffff); */
-    /* background-image: linear-gradient(to top, #bae8e2, #caedf3, #e0f2fc, #f3f7ff, #ffffff); */
 }
 
 .sub-title {
