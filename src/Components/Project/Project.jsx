@@ -35,8 +35,8 @@ const Project = () => {
                                             <div className="overlay">< i className='bx  bx-plus' style={{ Color: '#155bdf' }}></i> </div>
                                         </div>
                                         <h5 className='mb-0 mt-4'>AIRISH TECH</h5>
-                                        <div className='res-btn'>
-                                            <a href="https://airishtech.com" target='_blank' className=''><button type="button" className='me-3'>Live Preview</button></a>
+                                        <div className='res-btn my-lg-0 my-2'>
+                                            <a href="https://airishtech.com" target='_blank' className=''><button type="button" className=''>Live Preview</button></a>
 
                                         </div>
                                         {/* <p>Coming Soom</p> */}
