@@ -65,4 +65,123 @@
 
 
 
+/* AI Code */
 
+.Contact{
+    background-color: #000;
+}
+
+
+.contact-section {
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.contact-title {
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 80px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info p {
+  color: #d4d4d4;
+  margin-bottom: 30px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact-form {
+  flex: 1.3;
+}
+
+.name-row {
+  display: flex;
+  gap: 25px;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #d9d9d9;
+  font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #777;
+  color: #fff;
+  padding: 10px 0;
+  outline: none;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-title {
+    font-size: 60px;
+  }
+}
+
+
+
+/* Styling for social icons */
+.social-links a {
+    transition: opacity 0.3s ease;
+    opacity: 0.6;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    color: #fff; /* Ensures they stay white */
+}
+
+.social-links i {
+    font-size: 24px;
+}
