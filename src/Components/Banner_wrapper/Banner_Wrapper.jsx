@@ -22,6 +22,7 @@ function Banner_Wrapper({ ref, isInview }) {
                                 }}
                                 className="text-uppercase text- position-relative"
                                 style={{ willChange: "transform, opacity" }}
+                                
                             >
                                 Hello
                             </motion.h2>

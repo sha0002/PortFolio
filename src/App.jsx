@@ -4,7 +4,7 @@ import './Responsive.css'
 import Navbar from './Components/NavBar/Navbar'
 import Banner_Wrapper from './Components/Banner_wrapper/Banner_Wrapper'
 import About from './Components/About/About'
-import Skills from './Components/Skills/Skills'
+import { Skills } from './Components/Skills/Skills'
 import Project from './Components/Project/Project'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
@@ -14,7 +14,7 @@ import FadeInSection from './Components/CheckAni/animate'
 
 
 function App() {
-  
+
 
   return (
     <>

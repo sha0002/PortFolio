@@ -234,12 +234,12 @@ const Contact = () => {
                         >
                             <div className="contact-info text-light">
                                 <motion.div className="mb-2 mb-md-4" whileHover={{ x: 10 }}>
-                                    <a href="mailto:kshashank960@gmail.com" className="text-light text-decoration-none fs-4">
+                                    <a href="mailto:kshashank960@gmail.com" className="text-light text-decoration-none fs-5">
                                         kshashank960@gmail.com
                                     </a>
                                 </motion.div>
-                                <motion.div className="mb-2 mb-md-4" whileHover={{ x: 10 }}>
-                                    <a href="tel:+918527015266" className="text-light text-decoration-none fs-4">
+                                <motion.div className="mb-2 mb-md-4 " whileHover={{ x: 10 }}>
+                                    <a href="tel:+918527015266" className="text-light text-decoration-none fs-5">
                                         +91 8527015266
                                     </a>
                                 </motion.div>

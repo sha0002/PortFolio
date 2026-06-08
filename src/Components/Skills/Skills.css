@@ -254,3 +254,270 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+/* --- Skill Section Styles --- */
+
+/* Ensure section fills height but wraps content nicely */
+.skills-section {
+  min-height: auto; /* Changed from 100vh to let content flow naturally */
+  display: flex;
+  align-items: center;
+}
+
+/* The Grid Container */
+.skill-grid {
+  display: grid;
+  /* 3 Columns on Large Screens */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px; /* Spacing between cards */
+  padding: 15px;
+  border: 1px solid #444;
+  background-color: rgba(0, 0, 0, 0.2); /* Subtle dark background for the whole grid */
+  border-radius: 8px;
+}
+
+/* Individual Skill Card (Medium Size) */
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white */
+  border: 1px solid #333;
+  border-radius: 8px;
+  
+  /* Interaction Setup */
+  cursor: pointer; /* Changes cursor to pointer */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1rem; /* Medium padding */
+  height: 100%; /* Ensures equal height if text varies */
+}
+
+/* Hover Effects */
+.skill-card:hover {
+  background-color: rgba(255, 255, 255, 0.12); /* Brighter background on hover */
+  transform: scale(1.08); /* Zoom in (matches Framer Motion whileHover) */
+  border-color: #555;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  z-index: 10; /* Bring to front */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on mobile for balance */
+    gap: 12px;
+    padding: 10px;
+  }
+  
+  .skill-card {
+    padding: 0.8rem; /* Slightly smaller padding on mobile */
+  }
+  
+  .skill-card i {
+    font-size: 1.3rem; /* Adjust icon size for small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-zinc-950: #09090b;
+}
+
+@keyframes color-run {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 32px 32px;
+  }
+}
+
+@keyframes color-cycle-glow {
+  0%, 100% {
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  }
+  20% {
+    background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+  }
+  40% {
+    background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+  }
+  60% {
+    background: radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+  }
+  80% {
+    background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.15) 0%, transparent 70%);
+  }
+}
+
+@keyframes scan-line-anim {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@layer utilities {
+  .running-color-bg {
+    background: linear-gradient(-45deg, 
+      rgba(99, 102, 241, 0.08), 
+      rgba(20, 184, 166, 0.08), 
+      rgba(217, 70, 239, 0.08), 
+      rgba(244, 63, 94, 0.08),
+      rgba(14, 165, 233, 0.08)
+    );
+    background-size: 400% 400%;
+    animation: color-run 25s ease infinite;
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .grid-bg-animated {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 32px 32px;
+    animation: grid-drift 22s linear infinite;
+  }
+
+  .grid-color-cycle-glow {
+    animation: color-cycle-glow 15s linear infinite;
+  }
+
+  .sweeping-scan-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, 
+      transparent 10%, 
+      rgba(99, 102, 241, 0.3) 30%, 
+      rgba(6, 182, 212, 0.45) 50%, 
+      rgba(16, 185, 129, 0.3) 70%, 
+      transparent 90%
+    );
+    box-shadow: 0 0 16px 3px rgba(6, 182, 212, 0.25);
+    pointer-events: none;
+    z-index: 15;
+    animation: scan-line-anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .rainbow-border-container {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5px;
+    border-radius: 8px;
+    background: rgba(63, 63, 70, 0.2);
+  }
+
+  .rainbow-border-flow {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: conic-gradient(
+      from 0deg,
+      #000000,
+      #1a1a1a,
+      #52525b,
+      #ffffff,
+      #e4e4e7,
+      #27272a,
+      #000000
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .rainbow-border-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 39, 42); /* Match outer dividers bg if needed */
+    border-radius: 7px;
+    overflow: hidden;
+  }
+
+  .skills-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background-color: rgba(63, 63, 70, 0.4);
+  }
+
+  #skill-card-placeholder {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .skills-grid-container {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+body {
+  background-color: #030303;
+  color: #f4f4f5;
+  font-family: var(--font-sans);
+}
+
