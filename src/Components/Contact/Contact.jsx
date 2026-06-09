@@ -207,7 +207,7 @@ const Contact = () => {
                         ref={titleRef}
                         className="text-white fw-bold mb-3 mb-lg-5 "
                         style={{
-                            fontSize: 'clamp(4.5rem, 12vw, 8.5rem)',
+                            fontSize: 'clamp(3.5rem, 12vw, 8.5rem)',
                             lineHeight: '1.0',
                             letterSpacing: '-0.04em'
                         }}
@@ -233,19 +233,18 @@ const Contact = () => {
                             variants={itemVariants}
                         >
                             <div className="contact-info text-light">
-                                <motion.div className="mb-2 mb-md-4" whileHover={{ x: 10 }}>
+                                <motion.div className="mb-2 mb-md-3" whileHover={{ x: 10 }}>
                                     <a href="mailto:kshashank960@gmail.com" className="text-light text-decoration-none fs-5">
                                         kshashank960@gmail.com
                                     </a>
                                 </motion.div>
-                                <motion.div className="mb-2 mb-md-4 " whileHover={{ x: 10 }}>
+                                <motion.div className="mb-2 mb-md-3 " whileHover={{ x: 10 }}>
                                     <a href="tel:+918527015266" className="text-light text-decoration-none fs-5">
                                         +91 8527015266
                                     </a>
                                 </motion.div>
                                 <div className="fs-5 text-light-50 mb-3">
-                                    123 Demo Street<br />
-                                    New York, NY 12345
+                                    Delhi, India
                                 </div>
 
                                 <div>

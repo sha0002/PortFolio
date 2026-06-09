@@ -107,15 +107,15 @@ export function SkillsGrid() {
             {/* Empty Slot Placeholder to build the elegant block border balance */}
             <div
               id="skill-card-placeholder"
-              // className="relative p-2.5 sm:p-5 md:p-8 bg-black/8 w-full h-full flex items-center justify-center pointer-events-none min-h-[64px] sm:min-h-[82px]"
-              className="hidden
-    lg:flex
-    items-center
-    justify-center
-    min-h-[100px]
-    border
-    border-zinc-800/40
-    rounded-lg"
+              className="relative p-2.5 sm:p-5 md:p-8 bg-black/8 w-full h-full flex items-center justify-center pointer-events-none min-h-[64px] sm:min-h-[82px]"
+    //           className="hidden
+    // lg:flex
+    // items-center
+    // justify-center
+    // min-h-[100px]
+    // border
+    // border-zinc-800/40
+    // rounded-lg"
             >
               <div className="w-1.5 h-1.5 rounded-full bg-zinc-800" />
             </div>

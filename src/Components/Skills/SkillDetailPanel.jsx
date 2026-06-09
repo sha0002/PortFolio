@@ -15,7 +15,7 @@ export function SkillDetailPanel() {
         <div className="space-y-4">
           <div 
             id="badge-banner-ready"
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-mono border border-zinc-800 bg-zinc-900/50 text-zinc-400"
+            className="inline-flex items-center gap-1.5 px-2.5 py-2 rounded-full text-[10px] font-mono border border-zinc-800 bg-zinc-900/50 text-zinc-400"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-pulse" />
             <span>Ready to Deploy</span>
@@ -28,16 +28,16 @@ export function SkillDetailPanel() {
             </span>
           </h3>
 
-          <p id="panel-subdescription" className="text-zinc-400 text-xs md:text-sm leading-relaxed">
+          {/* <p id="panel-subdescription" className="text-zinc-400 text-xs md:text-sm leading-relaxed">
             A diverse and resilient set of modern technologies to design high-performance responsive web interfaces, robust systems, and optimized configurations.
-          </p>
+          </p> */}
         </div>
 
         {/* Browser Illustration Stack matching visualization mockup */}
         <BrowserMockup />
 
         {/* Left Column Footnotes */}
-        <div className="text-[10px] font-mono text-zinc-500 flex items-center justify-between border-t border-zinc-900 pt-4">
+        <div className="text-[10px] font-mono text-zinc-500 flex items-center justify-between border-t border-zinc-900 pt-3">
           <span className="flex items-center gap-2">
             <Layers className="w-3.5 h-3.5" />
             11 Technologies Loaded
