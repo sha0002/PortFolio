@@ -22,7 +22,8 @@ function App() {
     <>
       <div>
         <Navbar />
-        <div style={{ width: '100%', height: '700px', position: 'relative' }} >
+        {/* <div style={{ width: '100%', position: 'relative' }} className='h-[400px]! md:h-[700px]!'  > */}
+        <div style={{ width: '100%', height: '700px', position: 'relative' }}  >
           <DotGrid
             dotSize={5}
             gap={15}
@@ -36,7 +37,7 @@ function App() {
           />
         </div>
         {/* <Banner_Wrapper /> */}
-        {/* <About /> */}
+        <About />
         <Skills />
         {/* <Project /> */}
         <LocationCardDemo />

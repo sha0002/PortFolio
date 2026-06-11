@@ -6,13 +6,13 @@ const Skills = () => {
   return (
     <div
       id="main-app-container Skills"
-      className="relative min-h-screen Skills bg-black text-zinc-100 flex flex-col items-center justify-center p-4 md:p-8 overflow-hidden font-sans"
+      className="relative! min-h-screen! Skills! bg-black! text-zinc-100! flex! flex-col! items-center! justify-center! p-4! md:p-8! overflow-hidden! font-sans!"
     >
 
       {/* Dynamic Colored Ambient Spheres */}
       <div
         id="glow-sphere-1"
-        className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 rounded-full w-96 h-96 bg-indigo-500/10 blur-[130px] pointer-events-none"
+        className="absolute! top-1/4! left-1/4! -translate-x-1/2! -translate-y-1/2! rounded-full! w-96! h-96! bg-indigo-500/10! blur-[130px]! pointer-events-none!"
       />
       <div
         id="glow-sphere-2"

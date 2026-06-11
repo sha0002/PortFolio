@@ -6,6 +6,7 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { ArrowRight, Mail } from "lucide-react";
 import { Link } from 'react-scroll';
 import { motion, useInView } from 'motion/react'
+import FadeIn from '../About/FadeIn';
 
 
 gsap.registerPlugin(InertiaPlugin);
@@ -277,27 +278,33 @@ const DotGrid = ({
                     {/* Content */}
                     <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4">
                         {/* Gradient Title */}
-                        <h1
-                            className="text-4xl! md:text-8xl! font-extrabold! mb-4! tracking-tight"
-                            style={{
-                                background: 'linear-gradient(90deg, #a855f7, #8b5cf6, #06b6d4, #10b981)',
-                                WebkitBackgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                                backgroundClip: 'text',
-                            }}
-                        >
-                            I am Shashank
-                        </h1>
+                        <FadeIn delay={0.1} y={20}>
+
+                            <h1
+                                className="text-4xl! md:text-8xl! font-extrabold! mb-4! tracking-tight"
+                                style={{
+                                    background: 'linear-gradient(90deg, #a855f7, #8b5cf6, #06b6d4, #10b981)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                    backgroundClip: 'text',
+                                }}
+                            >
+                                I am Shashank
+                            </h1>
+                        </FadeIn>
 
                         {/* Subtitle */}
-                        <h2
-                            className="text-[22px]! md:text-4xl! font-bold! uppercase text-white mb-6! tracking-wide"
-                            style={{
-                                textShadow: '0 1px #fff, 2px 0 blue, -1px 0 #fff, 0 -1px #fff',
-                            }}
-                        >
-                            I am Front-end Developer
-                        </h2>
+                        <FadeIn delay={0.3} y={20}>
+
+                            <h2
+                                className="text-[22px]! md:text-4xl! font-bold! uppercase text-white mb-6! tracking-wide"
+                                style={{
+                                    textShadow: '0 1px #fff, 2px 0 blue, -1px 0 #fff, 0 -1px #fff',
+                                }}
+                            >
+                                I am Front-end Developer
+                            </h2>
+                        </FadeIn>
 
                         {/* Description */}
                         {/* <p className="text-gray-300 text-base md:text-lg max-w-3xl leading-relaxed mb-8">
@@ -308,55 +315,66 @@ const DotGrid = ({
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-3! md:gap-6! justify-center mb-8!">
                             {/* Explore More Button (Black with White Shadow) */}
-                            <a href={`/pdf/SHA1.pdf`} target='_black'>
-                                <button
-                                    className="px-6! py-2! bg-black text-white font-bold text-lg rounded-xl! border-2 border-white 
-                                shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] 
-                                transition-all duration-200 
-                                hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]
-                                active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
-                                >
-                                    Resume
-                                </button>
-                            </a>
+                            <FadeIn delay={0.5} y={20}>
+                                {/* <ContactButton
+                                                    onClick={onContactClick}
+                                                    label="Contact Me"
+                                                /> */}
+                                <a href={`/pdf/SHA1.pdf`} target='_black'>
+                                    <button
+                                        className="px-6! py-2! bg-black text-white font-bold text-lg rounded-xl! border-2 border-white 
+                                                            shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] 
+                                                            transition-all duration-200 
+                                                            hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]
+                                                            active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+                                    >
+                                        Resume
+                                    </button>
+                                </a>
+                            </FadeIn>
 
                             {/* Contact Me Button (White with White Shadow) */}
-                            <Link to="Contact">
-                                <button
-                                    className="px-6! py-2! bg-white text-black font-bold text-lg rounded-xl! border-2 border-black 
-                                shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] 
-                                transition-all duration-200 
-                                hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]
-                                active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
-                                >
-                                    Contact Me
-                                </button>
-                            </Link>
+                            <FadeIn delay={0.5} y={20}>
+                                <Link to="Contact">
+                                    <button
+                                        className="px-6! py-2! bg-white text-black font-bold text-lg rounded-xl! border-2 border-black 
+                                    shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] 
+                                    transition-all duration-200 
+                                    hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]
+                                    active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+                                    >
+                                        Contact Me
+                                    </button>
+                                </Link>
+                            </FadeIn>
                         </div>
 
                         {/* Social Icons */}
-                        
+
                         <div>
                             <div className="d-flex gap-4 social-icons">
-                                {[
-                                    // { icon: 'bxl-instagram', link: 'https://instagram.com' },
-                                    // { icon: 'bxl-twitter', link: 'https://twitter.com' },
-                                    { icon: 'bxl-linkedin', link: 'https://www.linkedin.com/in/shashank-kumar-687376303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-                                    { icon: 'bxl-github', link: 'https://github.com/sha0002' },
-                                    { icon: 'bxl-whatsapp', link: 'https://wa.me/+918527015266' },
-                                ].map((social, i) => (
-                                    <motion.a
-                                        key={i}
-                                        href={social.link}
-                                        target="_blank"
-                                        className="text-light fs-2 social-icon"
-                                        whileHover={{ scale: 1.3, rotate: 8, color: "#0d6efd" }}
-                                        whileTap={{ scale: 0.9 }}
-                                        transition={{ type: "spring", stiffness: 300 }}
-                                    >
-                                        <i className={`bx ${social.icon}`}></i>
-                                    </motion.a>
-                                ))}
+                                <FadeIn delay={0.7} y={20}>
+
+                                    {[
+                                        // { icon: 'bxl-instagram', link: 'https://instagram.com' },
+                                        // { icon: 'bxl-twitter', link: 'https://twitter.com' },
+                                        { icon: 'bxl-linkedin', link: 'https://www.linkedin.com/in/shashank-kumar-687376303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                                        { icon: 'bxl-github', link: 'https://github.com/sha0002' },
+                                        { icon: 'bxl-whatsapp', link: 'https://wa.me/+918527015266' },
+                                    ].map((social, i) => (
+                                        <motion.a
+                                            key={i}
+                                            href={social.link}
+                                            target="_blank"
+                                            className="text-light fs-2 social-icon"
+                                            whileHover={{ scale: 1.3, rotate: 8, color: "#0d6efd" }}
+                                            whileTap={{ scale: 0.9 }}
+                                            transition={{ type: "spring", stiffness: 300 }}
+                                        >
+                                            <i className={`bx ${social.icon}`}></i>
+                                        </motion.a>
+                                    ))}
+                                </FadeIn>
                             </div>
                         </div>
                     </div>
