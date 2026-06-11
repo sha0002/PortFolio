@@ -21,7 +21,7 @@ function Navbar() {
 
   const navItems = [
     { name: "Home", to: "Home" },
-    { name: "About", to: "About" },
+    // { name: "About", to: "About" },
     { name: "Skills", to: "Skills" },
     { name: "Projects", to: "Project" },
     { name: "Contact", to: "Contact" },

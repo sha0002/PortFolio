@@ -120,83 +120,7 @@ const Contact = () => {
 
     return (
         <>
-            {/* <section className='section bg-dark Contact' id='Contact'>
-                <div className="container">
-                    <div className="row gy-5">
-                        <div className="col-lg-6">
-                            <div className="contact-form">
-                                < h2>Get In Touch</ h2>
-                                <form onSubmit={onSubmit}>
-                                    <div className="row gy-4 gx-3 ">
-                                        < div
 
-                                            className="col-12">
-                                            <div className="form-group">
-                                                <label htmlFor="" className='form-label' >Name</label>
-                                                <input type="text" className='form-control shadow-none' name='name' required />
-                                            </div>
-                                        </ div>
-                                        < div
-                                            className="col-12">
-                                            <div className="form-group">
-                                                <label htmlFor="" className='form-label' >E-Mail</label>
-                                                <input type="email" className='form-control shadow-none' name='email' required />
-                                            </div>
-                                        </ div>
-                                        < div className="col-12">
-                                            <div className="form-group">
-                                                <label htmlFor="" className='form-label' >Message</label>
-                                                <textarea name="message" className='form-control shadow-none' rows={"3"} required></textarea>
-                                            </div>
-                                        </ div>
-                                        < div className="col-12 res-btn">
-                                            <button type="submit" > {isSubmitting ? "Sending..." : "Send Message"} </button>
-                                        </ div>
-                                    </div>
-                                </form>
-                                <span>{result}</span>
-                            </div>
-                        </div>
-                        <div className="col-lg-5 ms-auto col-xl-4">
-                            < div className="pb-3 d-none d-lg-block">
-                                <img src="/images/cont.PNG" alt="contact-img" style={{ width: "450px" }} className='img-fluid rounded float-center' />
-                            </ div>
-                            <ul className='contact-info'>
-                                < li
-                                >
-                                    <div className="icon bg-primary">
-                                        < i className='bxr  bx-phone' style={{ Color: '#000000' }}></i>
-                                    </div>
-                                    <div className="col ps-3">
-                                        <h5>Phone</h5>
-                                        <a href="tel:+918527015266" target='_black' className='text-light fs-6 text-decoration-none'>+91 8527015266</a>
-                                    </div>
-                                </ li>
-                                < li
-                                >
-                                    <div className="icon bg-success">
-                                        <i className='bxr  bx-envelope' style={{ Color: '#000000' }}></i>
-                                    </div>
-                                    <div className="col ps-3">
-                                        <h5>Mail</h5>
-                                        <a href="mailto:kshashank960@gmail.com" target='_black' className='text-light fs-6 text-decoration-none'>kshashank960@gmail.com</a>
-
-                                    </div>
-                                </ li>
-                                < li >
-                                    <div className="icon bg-danger">
-                                        <i className='bxl  bx-whatsapp' style={{ Color: '#000000' }}></i>
-                                    </div>
-                                    <div className="col ps-3">
-                                        <h5>Whatsapp</h5>
-                                        <a href="https://wa.me/+918527015266" target='_black' className='text-light fs-6 text-decoration-none'>Click Here</a>
-                                    </div>
-                                </ li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>  */}
 
 
 
@@ -251,11 +175,11 @@ const Contact = () => {
                                     <p className="text-light-50 mb-3">CONNECT WITH ME</p>
                                     <div className="d-flex gap-4 social-icons">
                                         {[
-                                            { icon: 'bxl-facebook', link: 'https://facebook.com' },
-                                            { icon: 'bxl-instagram', link: 'https://instagram.com' },
-                                            { icon: 'bxl-twitter', link: 'https://twitter.com' },
-                                            { icon: 'bxl-linkedin', link: 'https://linkedin.com' },
-                                            { icon: 'bxl-github', link: 'https://github.com' }
+                                            { icon: 'bxl-facebook', link: 'https://www.facebook.com/share/1FvxoCqUJj/' },
+                                            { icon: 'bxl-instagram', link: 'https://www.instagram.com/kshashank7038?utm_source=qr&igsh=MXBtcjJ4bGQ5MnVqbw==' },
+                                            { icon: 'bxl-twitter', link: 'https://x.com/iamshashank0002?s=08' },
+                                            { icon: 'bxl-linkedin', link: 'https://www.linkedin.com/in/shashank-kumar-687376303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                                            { icon: 'bxl-github', link: 'https://github.com/sha0002' }
                                         ].map((social, i) => (
                                             <motion.a
                                                 key={i}
@@ -334,7 +258,12 @@ const Contact = () => {
                                     <div className="col-12 pt-4">
                                         <button
                                             type="submit"
-                                            className="btn btn-light px-5 py-3 fw-medium fs-5"
+                                            // className="btn btn-light px-5 py-3 fw-medium fs-5"
+                                            className="px-6! py-3! bg-white text-black font-bold text-lg rounded-xl! border-2 border-black 
+                                shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] 
+                                transition-all duration-200 
+                                hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]
+                                active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
                                             disabled={isSubmitting}
                                         >
                                             {isSubmitting ? "Sending..." : "SUBMIT"}

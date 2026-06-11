@@ -2,25 +2,25 @@ import { LocationCard } from "./CardUI";
 
 const locations = [
   {
-    city: "India",
-    address: "Hawa Mahal, Pink City, Jaipur, Rajasthan India",
+    city: "AIRISH TECH",
+    address: "Created and designed the AirishTech website using HTML, CSS, JavaScript, and Bootstrap.",
     imageUrl:
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?q=80&w=964&auto=format&fit=crop",
-    directionsUrl: "https://maps.app.goo.gl/TWAmMefs3B22wU5LA",
+      "/project/airish-tech.png",
+    directionsUrl: "https://airishtech.com",
   },
   {
-    city: "Sydney",
-    address: "456 Ocean View Road, Bondi Beach, NSW 2026",
+    city: "The Vitality Now",
+    address: "Designed and developed a modern, responsive wellness website featuring health-focused content, engaging UI/UX, smooth animations, and mobile-friendly layouts to enhance user engagement and accessibility.",
     imageUrl:
-      "https://images.unsplash.com/photo-1540448051910-09cfadd5df61?w=900&auto=format&fit=crop&q=60",
-    directionsUrl: "https://maps.app.goo.gl/3qXzH4fSjK6rB7yP8",
+      "/project/thevatalitynow.png",
+    directionsUrl: "thevitalitynow.netlify.app",
   },
   {
-    city: "Sydney",
-    address: "456 Ocean View Road, Bondi Beach, NSW 2026",
+    city: "MyArtFoundation",
+    address: "Developed a responsive educational website focused on art learning, creative development, and student engagement. Implemented modern UI/UX, intuitive navigation, and mobile-friendly layouts to provide an accessible and interactive learning experience.",
     imageUrl:
-      "https://images.unsplash.com/photo-1540448051910-09cfadd5df61?w=900&auto=format&fit=crop&q=60",
-    directionsUrl: "https://maps.app.goo.gl/3qXzH4fSjK6rB7yP8",
+      "/project/myart.png",
+    directionsUrl: "https://myartfoundation.com/",
   },
 ];
 
@@ -31,14 +31,13 @@ export default function App() {
         {/* Header */}
         <div className="mb-16!">
           <p className="text-sm! font-semibold! uppercase! tracking-widest! text-muted-foreground! mb-3!">
-            Locations
+            Quality Work 
           </p>
           <h1 className="text-5xl! font-bold! tracking-tight! text-foreground!">
-            Our Offices
+            Our Projects
           </h1>
           <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground">
-            Find us at our offices around the world. Visit any location or get
-            directions to come say hello.
+            Transforming ideas into responsive and engaging digital experiences.
           </p>
         </div>
 

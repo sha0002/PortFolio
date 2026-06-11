@@ -8,26 +8,26 @@ export function SkillsGrid() {
   return (
     <div
       id="explorer-panel"
-      className="lg:col-span-8 p-3 sm:p-6 md:p-8 flex flex-col justify-center bg-zinc-950/20"
+      className="lg:col-span-8! p-3! sm:p-6! md:p-8! flex! flex-col! justify-center! bg-zinc-950/20!"
     >
       {/* Display Header */}
       <div
         id="explorer-header-info"
-        className="flex items-center justify-between mb-4 border border-zinc-800/60 bg-zinc-900/10 rounded-md py-2 px-3"
+        className="flex! items-center! justify-between! mb-4! border! border-zinc-800/60! bg-zinc-900/10! rounded-md! py-2! px-3!"
       >
-        <span className="font-mono text-[9px] text-zinc-500 tracking-wider uppercase">
+        <span className="font-mono! text-[9px]! text-zinc-500! tracking-wider! uppercase!">
           Interactive Grid Explorer
         </span>
-        <span className="font-mono text-xs text-white tracking-[0.25em] font-semibold flex items-center animate-pulse">
+        <span className="font-mono! text-xs! text-white! tracking-[0.25em]! font-semibold! flex! items-center! animate-pulse!">
           SKILLS...
         </span>
       </div>
 
       {/* Rainbow Running Border Container */}
-      <div id="grid-glow-card-holder" className="rainbow-border-container shadow-2xl">
+      <div id="grid-glow-card-holder" className="rainbow-border-container! shadow-2xl!">
         <motion.div
           id="border-rainbow-flow-element"
-          className="rainbow-border-flow"
+          className="rainbow-border-flow!"
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
         />

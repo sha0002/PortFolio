@@ -36,7 +36,7 @@ function App() {
           />
         </div>
         {/* <Banner_Wrapper /> */}
-        <About />
+        {/* <About /> */}
         <Skills />
         {/* <Project /> */}
         <LocationCardDemo />

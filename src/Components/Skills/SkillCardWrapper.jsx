@@ -52,7 +52,7 @@ export function SkillCardWrapper({ id, skill, children }) {
       {/* ADDITIONAL GENERAL AMBIENT GLOW ON HOVER */}
       <div 
         id={`${id}-ambient-hover-backplate`}
-        className="absolute inset-0 pointer-events-none transition-opacity duration-350"
+        className="absolute! inset-0! pointer-events-none! transition-opacity! duration-350!"
         style={{
           boxShadow: `inset 0 0 15px ${skill.color}08`,
           opacity: isHovered ? 1 : 0
