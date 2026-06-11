@@ -1,4 +1,5 @@
 import { LocationCard } from "./CardUI";
+import FadeIn from '../About/FadeIn';
 
 const locations = [
   {
@@ -30,15 +31,21 @@ export default function App() {
       <div className="mx-auto! max-w-6xl! px-6! py-20! lg:px-8!">
         {/* Header */}
         <div className="mb-16!">
-          <p className="text-sm! font-semibold! uppercase! tracking-widest! text-muted-foreground! mb-3!">
-            Quality Work 
-          </p>
-          <h1 className="text-5xl! font-bold! tracking-tight! text-foreground!">
-            Our Projects
-          </h1>
-          <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground">
-            Transforming ideas into responsive and engaging digital experiences.
-          </p>
+          <FadeIn delay={0.1} y={20}>
+            <p className="text-sm! font-semibold! uppercase! tracking-widest! text-muted-foreground! mb-3!">
+              Quality Work
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3} y={20}>
+            <h1 className="text-5xl! font-bold! tracking-tight! text-foreground!">
+              Our Projects
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.1} y={20}>
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground">
+              Transforming ideas into responsive and engaging digital experiences.
+            </p>
+          </FadeIn>
         </div>
 
         {/* Card grid */}

@@ -9,8 +9,8 @@ const About = () => {
 
     return (
         <section
-            id="about"
-            className="relative! min-h-screen! flex! flex-col! items-center! justify-center! bg-[#010103]! overflow-hidden! px-5! sm:px-8! md:px-10! py-20!"
+            id="About"
+            className="relative! About min-h-screen! flex! flex-col! items-center! justify-center! bg-[#010103]! overflow-hidden! px-5! sm:px-8! md:px-10! py-20!"
             style={{ contentVisibility: "auto" }}
         >
             {/* Absolute Decorative 3D Images on Corners */}
