@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div
       id="main-app-container Skills"
-      className="relative! min-h-screen! Skills! bg-black! text-zinc-100! flex! flex-col! items-center! justify-center! p-4! md:p-8! overflow-hidden! font-sans!"
+      className="relative! min-h-screen! Skills bg-black! text-zinc-100! flex! flex-col! items-center! justify-center! p-4! md:p-8! overflow-hidden! font-sans!"
     >
 
       {/* Dynamic Colored Ambient Spheres */}

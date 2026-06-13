@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00                      ---/Regedit by TechieSavi
+
+
+[HKEY_CURRENT_USER\System\GameConfigStore]
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR] 
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR] 
+
