@@ -125,7 +125,7 @@ export function SkillsGrid() {
       </div>
 
       {/* Micro instruction footer */}
-      <div
+      {/* <div
         id="grid-instruction-footer"
         className="flex items-center justify-between mt-4 border border-zinc-800/40 bg-zinc-900/10 rounded-md py-2 px-3 text-[10px]"
       >
@@ -134,7 +134,7 @@ export function SkillsGrid() {
           <span>Interactive Spotlight: hover over any card to trigger its colored glow</span>
         </div>
         <span className="font-mono text-zinc-600 hidden md:inline">UTC: 2026</span>
-      </div>
+      </div> */}
     </div>
   );
 }

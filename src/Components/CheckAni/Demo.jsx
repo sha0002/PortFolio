@@ -14,7 +14,7 @@ const locations = [
     address: "Designed and developed a modern, responsive wellness website featuring health-focused content, engaging UI/UX, smooth animations, and mobile-friendly layouts to enhance user engagement and accessibility.",
     imageUrl:
       "/project/thevatalitynow.png",
-    directionsUrl: "thevitalitynow.netlify.app",
+    directionsUrl: "https://thevitalitynow.netlify.app",
   },
   {
     city: "MyArtFoundation",
@@ -27,7 +27,7 @@ const locations = [
 
 export default function App() {
   return (
-    <div className="min-h-screen! bg-[#000000] text-foreground antialiased border-y-4 border-[#ebf4f5]">
+    <div className="min-h-screen! Project bg-[#000000] text-foreground antialiased border-y-4 border-[#ebf4f5]">
       <div className="mx-auto! max-w-6xl! px-6! py-20! lg:px-8!">
         {/* Header */}
         <div className="mb-16!">
@@ -41,7 +41,7 @@ export default function App() {
               Our Projects
             </h1>
           </FadeIn>
-          <FadeIn delay={0.1} y={20}>
+          <FadeIn delay={0.5} y={20}>
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground">
               Transforming ideas into responsive and engaging digital experiences.
             </p>

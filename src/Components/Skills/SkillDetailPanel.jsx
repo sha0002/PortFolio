@@ -24,7 +24,7 @@ export function SkillDetailPanel() {
           <h3 id="panel-headline" className="text-xl! md:text-2xl! font-light! text-white! tracking-tight! leading-snug!">
             Total control over <br />
             <span className="font-semibold! bg-gradient-to-r! from-white! via-zinc-400! to-zinc-600! bg-clip-text! text-transparent!">
-              Full Stack Technologies.
+              Front - End Technologies.
             </span>
           </h3>
 

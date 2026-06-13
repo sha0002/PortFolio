@@ -297,7 +297,7 @@ const DotGrid = ({
                         <FadeIn delay={0.3} y={20}>
 
                             <h2
-                                className="text-[22px]! md:text-4xl! font-bold! uppercase text-white mb-6! tracking-wide"
+                                className="text-[18px]! my-2 md:text-4xl! font-bold! uppercase text-white mb-6! tracking-wide"
                                 style={{
                                     textShadow: '0 1px #fff, 2px 0 blue, -1px 0 #fff, 0 -1px #fff',
                                 }}
@@ -316,10 +316,7 @@ const DotGrid = ({
                         <div className="flex flex-wrap gap-3! md:gap-6! justify-center mb-8!">
                             {/* Explore More Button (Black with White Shadow) */}
                             <FadeIn delay={0.5} y={20}>
-                                {/* <ContactButton
-                                                    onClick={onContactClick}
-                                                    label="Contact Me"
-                                                /> */}
+                                
                                 <a href={`/pdf/SHA1.pdf`} target='_black'>
                                     <button
                                         className="px-6! py-2! bg-black text-white font-bold text-lg rounded-xl! border-2 border-white 
